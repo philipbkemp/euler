@@ -17,7 +17,10 @@
 			</div>
 			<div class="row">
 				<div class="col">
-					<a href="/0/0/1.php" class="btn btn-outline-secondary">1</a>
+					<a href="/0/0/1.php" class="btn btn-outline-secondary w-100">1</a>
+				</div>
+				<div class="col">
+					<a href="/0/0/2.php" class="btn btn-outline-secondary w-100">2</a>
 				</div>
 			</div>
 		</div>
