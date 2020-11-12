@@ -22,6 +22,9 @@
 				<div class="col">
 					<a href="/0/0/2.php" class="btn btn-outline-secondary w-100">2</a>
 				</div>
+				<div class="col">
+					<a href="/0/0/3.php" class="btn btn-outline-secondary w-100">3</a>
+				</div>
 			</div>
 		</div>
 

@@ -1,3 +1,26 @@
+<?php
+
+function isPrime($number) {
+	if ( $number === 1 ) {
+		return false; 
+	}
+	if ( $number === 2 ) {
+		return true;
+	}
+
+	$sNumber = floor(sqrt($number));
+
+	for ( $x = 3 ; $x <= $sNumber ; $x++ ) {
+		if ( $number % $x === 0 ) {
+			return false;
+		}
+	}
+	
+	return true;
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
 	<head>
