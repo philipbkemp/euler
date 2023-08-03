@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Project Euler / 001</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+		<link rel="stylesheet" href="../../styles.css" />
+	</head>
+	<body>
+		<h1>#001</h1>
+		<div class="problem">
+			<p>If we list all the natural numbers below <strong>10</strong> that are multiples of <strong>3</strong> or <strong>5</strong>, we get <strong>3, 5, 6</strong> and <strong>9</strong>. The sum of these multiples is <strong>23</strong>.</p>
+			<p>Find the sum of all the multiples of <strong>3</strong> or <strong>5</strong> below <strong>1000</strong>.</p>
+		</div>
+
+		<button id="solve">Solve</button>
+
+		<textarea class="solution" readonly></textarea>
+		
+		<script type="text/javascript" src="../../scripts.js"></script>
+		<script type="text/javascript">
+			find = [3,5];
+			target = 1000;
+			numbers = [];
+			sum = 0;
+			function solve() {
+				for ( i=1 ; i!==target ; i++ ) {
+					if ( i % 3 === 0 || i % 5 === 0 ) {
+						numbers.push(i);
+						sum = sum + i;
+						log("Found number: " + i);
+					}
+				}
+				log("Sum: " + sum);
+			}
+		</script>
+
+	</body>
+</html>
